@@ -38,7 +38,6 @@ class AuthorizationActivity : AppCompatActivity() {
     private fun setupListeners() {
         logInButton.setOnClickListener {
             if (validateCredentials()) {
-                // Если учетные данные валидны, переходим на страницу профиля
                 val intent = Intent(this, ProfileActivity::class.java)
                 startActivity(intent)
                 finish()
